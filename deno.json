@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "deno -A build.mjs && cp static/* dist",
+    "build": "deno -A build.ts && cp static/* dist",
     "serve": "serve dist -s"
   },
   "imports": {
