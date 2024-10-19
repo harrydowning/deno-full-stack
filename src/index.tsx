@@ -1,9 +1,7 @@
-// @deno-types="npm:@types/react"
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <div>Hello, World</div>
   </React.StrictMode>,
