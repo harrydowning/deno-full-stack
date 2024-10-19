@@ -1,10 +1,14 @@
 import esbuild from "esbuild";
 
-await esbuild.build({
+const result = await esbuild.build({
   entryPoints: ["src/index.tsx"],
   bundle: true,
   platform: "browser",
-  outfile: "dist/index.js",
+  outdir: "dist",
+  splitting: true,
+  format: "esm",
   minify: true,
   metafile: true,
 });
+
+console.log(esbuild.analyzeMetafileSync(result.metafile, { color: true }));

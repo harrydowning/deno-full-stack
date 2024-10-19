@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "deno -A build.ts && cp static/* dist",
+    "build": "rm -rf dist && mkdir dist && cp static/* dist && deno -A build.ts",
     "serve": "serve dist -s"
   },
   "imports": {
