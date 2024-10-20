@@ -1,6 +1,7 @@
 # deno-react
 
-A very simple react app built with [deno](https://docs.deno.com/) and bundled with [esbuild](https://esbuild.github.io/).
+A very simple react app built with [deno](https://docs.deno.com/) and bundled
+with [esbuild](https://esbuild.github.io/).
 
 Build
 

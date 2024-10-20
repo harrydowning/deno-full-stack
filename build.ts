@@ -8,20 +8,20 @@ const port = 3000;
 
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir);
-fs.readdirSync(staticDir).forEach((path) => {
-  fs.cpSync(`${staticDir}/${path}`, outDir);
+fs.readdirSync(staticDir).forEach((file) => {
+  fs.cpSync(`${staticDir}/${file}`, outDir);
 });
 
-const options = {
+const options = Object.freeze({
   entryPoints: ["src/index.tsx"],
   bundle: true,
-  platform: "browser" as const,
+  platform: "browser",
   outdir: outDir,
   splitting: true,
-  format: "esm" as const,
+  format: "esm",
   minify: true,
-  metafile: true as const,
-};
+  metafile: true,
+});
 
 if (watch) {
   const ctx = await esbuild.context(options);
