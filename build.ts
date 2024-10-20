@@ -4,8 +4,6 @@ import process from "node:process";
 
 const outDir = "dist";
 const staticDir = "static";
-const watch = process.argv.includes("--watch");
-const port = 3000;
 
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir);
@@ -24,11 +22,11 @@ const options = Object.freeze({
   metafile: true,
 });
 
-if (watch) {
+if (process.argv.includes("--watch")) {
   const ctx = await esbuild.context(options);
-  ctx.watch();
-  ctx.serve({ port, servedir: outDir });
-  console.log(`Serving at http://localhost:${port}`);
+  await ctx.watch();
+  const { host, port } = await ctx.serve({ servedir: outDir });
+  console.log(`Serving at http://${host}:${port}`);
 } else {
   const result = await esbuild.build(options);
   console.log(esbuild.analyzeMetafileSync(result.metafile, { color: true }));
