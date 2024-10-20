@@ -1,4 +1,6 @@
+// @ts-types="npm:@types/react"
 import React from "react";
+// @ts-types="npm:@types/react-dom/client"
 import ReactDOM from "react-dom/client";
 
 import "./index.css";

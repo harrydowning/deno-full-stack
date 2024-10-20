@@ -1,15 +1,9 @@
 {
   "version": "4",
   "specifiers": {
-    "npm:@types/css-modules@^1.0.5": "1.0.5",
-    "npm:@types/node@^22.7.7": "22.7.7",
-    "npm:@types/react-dom@^18.3.1": "18.3.1",
-    "npm:@types/react@^18.3.11": "18.3.11",
     "npm:esbuild@0.24": "0.24.0",
-    "npm:esbuild@0.24.0": "0.24.0",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
-    "npm:serve@14.2.4": "14.2.4",
     "npm:serve@^14.2.4": "14.2.4"
   },
   "npm": {
@@ -84,31 +78,6 @@
     },
     "@esbuild/win32-x64@0.24.0": {
       "integrity": "sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA=="
-    },
-    "@types/css-modules@1.0.5": {
-      "integrity": "sha512-oeKafs/df9lwOvtfiXVliZsocFVOexK9PZtLQWuPeuVCFR7jwiqlg60lu80JTe5NFNtH3tnV6Fs/ySR8BUPHAw=="
-    },
-    "@types/node@22.7.7": {
-      "integrity": "sha512-SRxCrrg9CL/y54aiMCG3edPKdprgMVGDXjA3gB8UmmBW5TcXzRUYAh8EWzTnSJFAd1rgImPELza+A3bJ+qxz8Q==",
-      "dependencies": [
-        "undici-types"
-      ]
-    },
-    "@types/prop-types@15.7.13": {
-      "integrity": "sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA=="
-    },
-    "@types/react-dom@18.3.1": {
-      "integrity": "sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==",
-      "dependencies": [
-        "@types/react"
-      ]
-    },
-    "@types/react@18.3.11": {
-      "integrity": "sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==",
-      "dependencies": [
-        "@types/prop-types",
-        "csstype"
-      ]
     },
     "@zeit/schemas@2.36.0": {
       "integrity": "sha512-7kjMwcChYEzMKjeex9ZFXkt1AyNov9R5HZtjBKVsmVpw7pa7ZtlCGvCBC2vnnXctaYN+aRI61HjIqeetZW5ROg=="
@@ -252,9 +221,6 @@
         "shebang-command",
         "which"
       ]
-    },
-    "csstype@3.1.3": {
-      "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
     },
     "debug@2.6.9": {
       "integrity": "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==",
@@ -568,9 +534,6 @@
     "type-fest@2.19.0": {
       "integrity": "sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA=="
     },
-    "undici-types@6.19.8": {
-      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
-    },
     "update-check@1.5.4": {
       "integrity": "sha512-5YHsflzHP4t1G+8WGPlvKbJEbAJGCgw+Em+dGR1KmBUbr1J36SJBqlHLjR7oob7sco5hWHGQVcr9B2poIVDDTQ==",
       "dependencies": [
@@ -610,10 +573,6 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:@types/css-modules@^1.0.5",
-      "npm:@types/node@^22.7.7",
-      "npm:@types/react-dom@^18.3.1",
-      "npm:@types/react@^18.3.11",
       "npm:esbuild@0.24",
       "npm:react-dom@^18.3.1",
       "npm:react@^18.3.1",

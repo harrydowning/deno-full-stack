@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import esbuild from "esbuild";
+import process from "node:process";
 
 const outDir = "dist";
 const staticDir = "static";
