@@ -1,6 +1,7 @@
 {
   "version": "4",
   "specifiers": {
+    "npm:@types/css-modules@^1.0.5": "1.0.5",
     "npm:@types/node@^22.7.7": "22.7.7",
     "npm:@types/react-dom@^18.3.1": "18.3.1",
     "npm:@types/react@^18.3.11": "18.3.11",
@@ -83,6 +84,9 @@
     },
     "@esbuild/win32-x64@0.24.0": {
       "integrity": "sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA=="
+    },
+    "@types/css-modules@1.0.5": {
+      "integrity": "sha512-oeKafs/df9lwOvtfiXVliZsocFVOexK9PZtLQWuPeuVCFR7jwiqlg60lu80JTe5NFNtH3tnV6Fs/ySR8BUPHAw=="
     },
     "@types/node@22.7.7": {
       "integrity": "sha512-SRxCrrg9CL/y54aiMCG3edPKdprgMVGDXjA3gB8UmmBW5TcXzRUYAh8EWzTnSJFAd1rgImPELza+A3bJ+qxz8Q==",
@@ -606,6 +610,7 @@
   },
   "workspace": {
     "dependencies": [
+      "npm:@types/css-modules@^1.0.5",
       "npm:@types/node@^22.7.7",
       "npm:@types/react-dom@^18.3.1",
       "npm:@types/react@^18.3.11",

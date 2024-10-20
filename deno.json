@@ -5,6 +5,7 @@
     "serve": "serve dist -s"
   },
   "imports": {
+    "@types/css-modules": "npm:@types/css-modules@^1.0.5",
     "@types/node": "npm:@types/node@^22.7.7",
     "@types/react": "npm:@types/react@^18.3.11",
     "@types/react-dom": "npm:@types/react-dom@^18.3.1",
