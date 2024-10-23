@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch src/index.ts",
+    "compile": "deno compile -A -o server.bin src/index.ts",
+    "start": "./server.bin"
+  },
+  "imports": {
+    "express": "npm:express@^4.21.1"
+  }
+}

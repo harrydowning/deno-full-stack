@@ -1,7 +1,7 @@
-# deno-react
+# deno client
 
-A very simple react app template built with [deno](https://docs.deno.com/) and
-bundled with [esbuild](https://esbuild.github.io/).
+A template react app built with [deno](https://docs.deno.com/) and bundled with
+[esbuild](https://esbuild.github.io/).
 
 Run development server
 
